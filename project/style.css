@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  font-family: "Dancing Script", cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.gradient-background {
+  display: flex;
+  height: 25%;
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.card-wrapper {
+  max-width: 1248px;
+  margin: auto;
+}
+.left {
+  width: 40%;
+  display: flexbox;
+  justify-content: center;
+  margin: auto;
+}
+.container {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.container2 {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.p {
+  display: flex;
+  align-items: end;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+.iphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+  padding: 30px 10px 0;
+}
+.rounded {
+  border-radius: 50%;
+}
+.dog-img {
+  width: 150px;
+  display: block;
+  font-size: small;
+  margin: 20px auto 100px;
+  border-radius: 50%;
+}
+.logo-img {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 16px;
+}
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.btn-light {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: black;
+  border: 2px solid white;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.btn .icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.card-wrapper {
+  display: flex;
+  height: 400px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+.card-price {
+  display: flex;
+}
+.card-title {
+  background-color: lightgray;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+.card-title2 {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+.card-price > h1 {
+  font-size: 28px;
+}
+.card-price > h2 {
+  font-size: 24px;
+  opacity: 0.8;
+}
+.card > button {
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  width: 90%;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card > button-2 {
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  background-color: #3b3b3b;
+  cursor: pointer;
+}
+.first {
+  animation: card-animation 1s ease-out;
+}
+.second {
+  animation: card-animation 1s ease-out;
+
+  animation-delay: 0.5s;
+}
+.third {
+  animation: card-animation 1s ease-out;
+
+  animation-delay: 1s;
+}
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+#footer,
+.footer-sections {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  background-color: linear-gradient(90deg, #ff4e50, #1e90ff);
+  color: white;
+  margin: 0;
+  border: none;
+}
+.footer-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer-section {
+  display: flex;
+  gap: 40px;
+}
+.section h4 {
+  margin-bottom: 10px;
+  color: black;
+}
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section ul li {
+  margin-bottom: 6px;
+}
+.section ul li a {
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.3;
+}
+.section ul li a:hover {
+  opacity: 1;
+}
